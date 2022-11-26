@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\CQRS-ES\CQRS.Core\CQRS.Core.csproj" />
+    <ProjectReference Include="..\..\PostCommon\PostCommon.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Aggregates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Aggregates\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="MongoDB.Driver" />
+    <None Remove="Messages\" />
+    <None Remove="Commads\" />
+    <None Remove="Events\" />
+    <None Remove="Infrastructure\" />
+    <None Remove="Domain\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Handlers\" />
+    <None Remove="Producers\" />
+    <None Remove="Consumets\" />
+    <None Remove="Queries\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Messages\" />
+    <Folder Include="Commads\" />
+    <Folder Include="Events\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Handlers\" />
+    <Folder Include="Producers\" />
+    <Folder Include="Consumers\" />
+    <Folder Include="Queries\" />
+  </ItemGroup>
+</Project>
